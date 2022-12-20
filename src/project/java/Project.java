@@ -17,7 +17,6 @@ public class Project extends bee.api.Project {
         versionControlSystem("https://github.com/teletha/lycoris");
 
         require("com.github.teletha", "sinobu");
-        require("com.github.teletha", "stylist");
         require("com.github.teletha", "antibug").atTest();
     }
 }

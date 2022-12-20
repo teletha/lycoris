@@ -16,9 +16,6 @@ import java.util.function.Function;
 
 import org.junit.jupiter.api.Test;
 
-import lycoris.Tree;
-import lycoris.TreeNode;
-
 public class TreeDiffTest {
 
     @Test
