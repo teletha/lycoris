@@ -1,3 +1,4 @@
+
 /*
  * Copyright (C) 2022 The LYCORIS Development Team
  *
@@ -14,5 +15,8 @@ public class Project extends bee.api.Project {
         product("com.github.teletha", "lycoris", "0.1");
         license(MIT);
         versionControlSystem("https://github.com/teletha/lycoris");
+
+        require("com.github.teletha", "sinobu");
+        require("com.github.teletha", "antibug").atTest();
     }
 }
