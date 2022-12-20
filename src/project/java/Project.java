@@ -12,11 +12,12 @@ import static bee.api.License.*;
 
 public class Project extends bee.api.Project {
     {
-        product("com.github.teletha", "lycoris", "0.1");
+        product("com.github.teletha", "lycoris", ref("version.txt"));
         license(MIT);
         versionControlSystem("https://github.com/teletha/lycoris");
 
         require("com.github.teletha", "sinobu");
+        require("com.github.teletha", "stylist");
         require("com.github.teletha", "antibug").atTest();
     }
 }
