@@ -1,3 +1,4 @@
+package lycoris;
 
 /*
  * Copyright (C) 2023 The LYCORIS Development Team
