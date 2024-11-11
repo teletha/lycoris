@@ -11,13 +11,17 @@ package lycoris;
  */
 import static bee.api.License.*;
 
+import javax.lang.model.SourceVersion;
+
 public class Project extends bee.api.Project {
     {
         product("com.github.teletha", "lycoris", ref("version.txt"));
         license(MIT);
-        versionControlSystem("https://github.com/teletha/lycoris");
+        require(SourceVersion.latest(), SourceVersion.RELEASE_21);
 
         require("com.github.teletha", "sinobu");
         require("com.github.teletha", "antibug").atTest();
+
+        versionControlSystem("https://github.com/teletha/lycoris");
     }
 }
