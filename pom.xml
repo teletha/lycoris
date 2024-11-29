@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.teletha</groupId>
 	<artifactId>lycoris</artifactId>
-	<version>1.0.1</version>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 	<name>lycoris</name>
 	<description>Lycoris is designed to simplify the creation of hierarchical tree structures through a domain-specific language (DSL).
