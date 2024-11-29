@@ -26,7 +26,18 @@ import kiss.WiseRunnable;
 import kiss.WiseTriFunction;
 
 /**
- * The skeleton of DSL for tree structure.
+ * An abstract base class for creating a tree structure DSL (Domain-Specific Language).
+ * 
+ * <p>This class provides methods for building hierarchical structures with nodes and their
+ * relationships. It is highly customizable and extensible, making it suitable for scenarios
+ * where nested or tree-like data structures are needed.</p>
+ * 
+ * <p>The nodes are represented using generic types {@code Name} and {@code Node}. Node creation
+ * and relationships are managed through functional programming constructs like {@link Consumer},
+ * {@link Function}, and {@link BiConsumer}.</p>
+ * 
+ * @param <Name> The type of the name for the named nodes.
+ * @param <Node> The type of the node, which must implement {@link Consumer}.
  */
 public abstract class Tree<Name, Node extends Consumer<Node>> {
 

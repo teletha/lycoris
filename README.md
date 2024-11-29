@@ -6,6 +6,16 @@
     <a href="https://teletha.github.io/lycoris"><img src="https://img.shields.io/website.svg?down_color=red&down_message=CLOSE&label=Official%20Site&up_color=green&up_message=OPEN&url=https%3A%2F%2Fteletha.github.io%2Flycoris"></a>
 </p>
 
+## Summary
+Lycoris is designed to simplify the creation of hierarchical tree structures through a domain-specific language (DSL).
+It is versatile and reusable, making it ideal for managing nested or hierarchical data structures.
+
+## Features
+- Flexible Node Construction: Nodes can hold values of any type.
+- Easy Hierarchical Definition: Create tree structures with concise and intuitive DSL syntax.
+- Conditional and Loop Support: Easily handle dynamic structures using `if` conditions and `for` loops.
+- Extensibility: Customize builders and processors to suit your specific needs.
+<p align="right"><a href="#top">back to top</a></p>
 
 
 
@@ -97,7 +107,8 @@ If you think something might be a bug, but you're not sure, ask on StackOverflow
 
 ## Dependency
 Lycoris depends on the following products on runtime.
-* [sinobu-4.5.0](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.5.0)
+* [sinobu-4.5.2](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.5.2)
+* [stylist-1.12.0](https://mvnrepository.com/artifact/com.github.teletha/stylist/1.12.0)
 <p align="right"><a href="#top">back to top</a></p>
 
 

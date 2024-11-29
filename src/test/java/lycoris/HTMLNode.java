@@ -16,13 +16,13 @@ import java.util.function.Consumer;
 import lycoris.TreeTest.Id;
 import lycoris.TreeTest.ListItem;
 
-public abstract class HTML extends Tree<String, HTML.ElementNode> {
+public abstract class HTMLNode extends Tree<String, HTMLNode.ElementNode> {
 
     /**
      * 
      */
-    public HTML() {
-        super(HTML.ElementNode::new, null);
+    public HTMLNode() {
+        super(HTMLNode.ElementNode::new, null);
     }
 
     /**
@@ -43,7 +43,7 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
      * 
      * @param name An attribute name.
      */
-    protected final Consumer<HTML.ElementNode> attr(Object name, String value) {
+    protected final Consumer<HTMLNode.ElementNode> attr(Object name, String value) {
         return parent -> {
             if (name != null) {
                 String n = String.valueOf(name);
@@ -73,7 +73,7 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
     public String toString() {
         StringBuilder builder = new StringBuilder();
 
-        for (HTML.ElementNode node : root) {
+        for (HTMLNode.ElementNode node : root) {
             builder.append(node);
         }
         return builder.toString();
@@ -82,11 +82,11 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
     /**
      * @version 2017/02/06 16:02:42
      */
-    public static class ElementNode implements Consumer<HTML.ElementNode> {
+    public static class ElementNode implements Consumer<HTMLNode.ElementNode> {
 
         protected String name;
 
-        private List<HTML.AttributeNode> attrs = new ArrayList();
+        private List<HTMLNode.AttributeNode> attrs = new ArrayList();
 
         private List children = new ArrayList();
 
@@ -101,7 +101,7 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
          * @param item
          */
         public void add(ListItem item) {
-            HTML.ElementNode e = new ElementNode("li", 0, item);
+            HTMLNode.ElementNode e = new ElementNode("li", 0, item);
             e.children.add(new TextNode(item));
             children.add(e);
         }
@@ -117,7 +117,7 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
          * {@inheritDoc}
          */
         @Override
-        public void accept(HTML.ElementNode context) {
+        public void accept(HTMLNode.ElementNode context) {
             context.children.add(this);
         }
 
@@ -137,7 +137,7 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
 
             builder.append("<").append(name);
 
-            for (HTML.AttributeNode attr : attrs) {
+            for (HTMLNode.AttributeNode attr : attrs) {
                 builder.append(" ").append(attr);
             }
 
@@ -157,7 +157,7 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
     /**
      * @version 2017/02/06 15:52:47
      */
-    private static class TextNode implements Consumer<HTML.ElementNode> {
+    private static class TextNode implements Consumer<HTMLNode.ElementNode> {
 
         private final String text;
 
@@ -172,7 +172,7 @@ public abstract class HTML extends Tree<String, HTML.ElementNode> {
          * {@inheritDoc}
          */
         @Override
-        public void accept(HTML.ElementNode context) {
+        public void accept(HTMLNode.ElementNode context) {
             context.children.add(this);
         }
 

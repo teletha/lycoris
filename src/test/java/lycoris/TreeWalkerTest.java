@@ -21,7 +21,7 @@ class TreeWalkerTest {
 
     @Test
     void walk() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("html", () -> {
                     $("body", () -> {
@@ -50,7 +50,7 @@ class TreeWalkerTest {
         assert elements.get(7).equals("div");
     }
 
-    private Signal<XML> parse(HTML html) {
+    private Signal<XML> parse(HTMLNode html) {
         return I.signal(I.xml(html.toString())).recurseMap(e -> e.flatIterable(XML::children));
     }
 }

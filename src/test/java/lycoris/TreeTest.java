@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 import org.junit.jupiter.api.Test;
 
-import lycoris.HTML.ElementNode;
+import lycoris.HTMLNode.ElementNode;
 
 /**
  * @version 2017/02/06 14:00:16
@@ -25,7 +25,7 @@ public class TreeTest {
 
     @Test
     public void node() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("html");
             }
@@ -35,7 +35,7 @@ public class TreeTest {
 
     @Test
     public void nodeNest() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("html", () -> {
                     $("body");
@@ -47,7 +47,7 @@ public class TreeTest {
 
     @Test
     public void nodes() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("div");
                 $("div");
@@ -58,7 +58,7 @@ public class TreeTest {
 
     @Test
     public void attribute() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("div", attr("id", "test"));
             }
@@ -68,7 +68,7 @@ public class TreeTest {
 
     @Test
     public void attributeNullName() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("div", attr(null, "ok"));
             }
@@ -78,7 +78,7 @@ public class TreeTest {
 
     @Test
     public void attributeEmptyName() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("div", attr("", "ok"));
             }
@@ -88,7 +88,7 @@ public class TreeTest {
 
     @Test
     public void attributeNullValue() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("input", attr("checked", null));
             }
@@ -98,7 +98,7 @@ public class TreeTest {
 
     @Test
     public void attributeEmptyValue() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("div", attr("id", ""));
             }
@@ -108,7 +108,7 @@ public class TreeTest {
 
     @Test
     public void attributeWithoutValue() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("input", attr("checked"));
             }
@@ -118,7 +118,7 @@ public class TreeTest {
 
     @Test
     public void attributes2() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("num", attr(1), attr(2), () -> {
                     $("ok");
@@ -130,7 +130,7 @@ public class TreeTest {
 
     @Test
     public void attributes3() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("num", attr(1), attr(2), attr(3), () -> {
                     $("ok");
@@ -142,7 +142,7 @@ public class TreeTest {
 
     @Test
     public void attributes4() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("num", attr(1), attr(2), attr(3), attr(4), () -> {
                     $("ok");
@@ -157,7 +157,7 @@ public class TreeTest {
         boolean ok = true;
         boolean fail = false;
 
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("num", iｆ(ok, attr(1)), iｆ(fail, attr(2)));
             }
@@ -172,7 +172,7 @@ public class TreeTest {
         Supplier<Boolean> nul = null;
         Supplier<Boolean> empty = () -> null;
 
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("num", iｆ(ok, attr(1)), iｆ(fail, attr(2)), iｆ(nul, attr(3)), iｆ(empty, attr(4)));
             }
@@ -182,7 +182,7 @@ public class TreeTest {
 
     @Test
     public void either() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("num", either(true, attr(1), attr(-1)), either(false, attr(2), attr(-2)));
             }
@@ -192,7 +192,7 @@ public class TreeTest {
 
     @Test
     public void forRange() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("ol", foŕ(2, index -> {
                     $("li", () -> text(index));
@@ -205,7 +205,7 @@ public class TreeTest {
 
     @Test
     public void forRangeWithInitial() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("ol", foŕ(1, 3, index -> {
                     $("li", () -> text(index));
@@ -218,7 +218,7 @@ public class TreeTest {
 
     @Test
     public void forEnumType() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("ol", foŕ(ENUM.class, value -> {
                     $("li", () -> text(value.name()));
@@ -240,7 +240,7 @@ public class TreeTest {
     public void forArray() {
         String[] array = {"A", "B"};
 
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("ol", foŕ(array, value -> {
                     $("li", () -> text(value));
@@ -253,7 +253,7 @@ public class TreeTest {
 
     @Test
     public void forIterableConsumer() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("ol", foŕ(list("A", "B"), item -> {
                     $("li", () -> text(item));
@@ -266,7 +266,7 @@ public class TreeTest {
 
     @Test
     public void forIterableConsumerWithIndex() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("ol", foŕ(list("A", "B"), (id, item) -> {
                     $("li", () -> text(item + id));
@@ -278,7 +278,7 @@ public class TreeTest {
 
     @Test
     public void forIterableFunction() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("div", foŕ(list("a", "b"), Id::new));
             }
@@ -288,7 +288,7 @@ public class TreeTest {
 
     @Test
     public void forIterableFunctionWithIndex() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("ol", foŕ(list("a", "b"), ListItem::new));
             }
@@ -345,7 +345,7 @@ public class TreeTest {
 
     @Test
     public void outerDefinedConsumer() {
-        HTML html = new HTML() {
+        HTMLNode html = new HTMLNode() {
             {
                 $("div", new Id("ok"));
             }
