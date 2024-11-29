@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/teletha/lycoris/compare/v1.0.1...v1.1.0) (2024-11-29)
+
+
+### Features
+
+* add DSL for HTML ([5f56ac8](https://github.com/teletha/lycoris/commit/5f56ac80d1886fce2fd19529e72bdf349e1572b5))
+
 ## [1.0.1](https://github.com/teletha/lycoris/compare/v1.0.0...v1.0.1) (2024-11-11)
 
 
