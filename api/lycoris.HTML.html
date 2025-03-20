@@ -13,343 +13,342 @@
 		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
 		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
-		<link as="style" fetchpriority="high" href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="preload"/>
-		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<title>Lycoris API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="k">
-		<header class="l">
-			<h1 class="Q" date="2024-11-11" ver="1.1.0"><code>Lycoris</code></h1>
-			<nav class="W"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="g">
+		<header class="h" date="2024-11-29" ver="1.1.0">
+			<h1 class="k"><code>Lycoris</code></h1>
+			<nav class="l"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/lycoris/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/lycoris" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="c" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/lycoris/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/lycoris" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="f"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="d">
-			<nav class="I">
-				<div></div>
-			</nav>
-			<article class="H" id="Article">
-				<section class="R"><code class="i">lycoris</code>
-					<h2 class="AbstractClass T"><code class="e">HTML</code></h2>
-					<div class="X">
-						<ul class="C E">
-							<li><code><a href="api/lycoris.Tree.html">Tree</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code>, <code>kiss.XML</code></code></code></li>
-						</ul>
-					</div><span class="B"><p>Domain Specific Language for HTML.</p></span></section>
-				<section class="R" id="HTML()">
-					<h2 class="M"><i class="PUBLIC"></i><code class="e">HTML</code><code class="N">()</code></h2>
-				</section>
-				<section class="R" id="declare()">
-					<h2 class="M"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="e">declare</code><code class="N">()</code><i class="K"><code>void</code></i></h2><span class="B"><p>Defines the structure and content of the HTML document or fragment.</p><p>This abstract method serves as a blueprint for subclasses to implement
+		<nav class="P"></nav>
+		<article class="N" id="Article">
+			<section class="r"><code class="s">lycoris</code>
+				<h2 class="AbstractClass J"><code class="a">HTML</code></h2>
+				<div class="d">
+					<ul class="C E">
+						<li><code><a aria-label="lycoris.Tree" href="api/lycoris.Tree.html">Tree</a><code class="parameters"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code>, <code>kiss.XML</code></code></code></li>
+					</ul>
+				</div><span class="B"><p>Domain Specific Language for HTML.</p></span></section>
+			<section class="r" id="HTML()">
+				<h2 class="S"><i class="PUBLIC"></i><code class="a">HTML</code><code class="O">()</code></h2>
+			</section>
+			<section class="r" id="declare()">
+				<h2 class="S"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="a">declare</code><code class="O">()</code><i class="Q"><code>void</code></i></h2><span class="B"><p>Defines the structure and content of the HTML document or fragment.</p><p>This abstract method serves as a blueprint for subclasses to implement
  and define the specific elements, attributes, and hierarchy of the HTML structure.
  It is typically invoked to initialize and build the desired HTML content.</p><p>Subclasses should override this method to declare the HTML nodes and their
  relationships using the provided methods such as <code>$</code>, <code>attr</code>, and others.</p></span></section>
-				<section class="R" id="$(lycoris.HTML)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">$</code><code class="N">(<code><a href="api/lycoris.HTML.html">HTML</a></code><code class="parameterName">html</code>)</code><i class="K"><code>void</code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="api/lycoris.HTML.html">HTML</a></code><code>html</code></td>
-							<td><span><p>The <code>HTML</code> instance to be embedded. Its structure will be integrated
+			<section class="r" id="$(lycoris.HTML)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">$</code><code class="O">(<code><a aria-label="lycoris.HTML" href="api/lycoris.HTML.html">HTML</a></code><code class="parameterName">html</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="lycoris.HTML" href="api/lycoris.HTML.html">HTML</a></code><code class="parameterName">html</code></td>
+						<td><span><p>The <code>HTML</code> instance to be embedded. Its structure will be integrated
 into the current context.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Embeds the structure of another <code>HTML</code> instance into the current HTML document.
+					</tr>
+				</table><span class="B"><p>Embeds the structure of another <code>HTML</code> instance into the current HTML document.
 This method allows the reuse and composition of existing HTML definitions.</p><p>The <code>declare()</code> method of the provided <code>HTML</code> instance is invoked to
  generate its structure. The resulting XML nodes are then added to the current tree.</p></span></section>
-				<section class="R" id="attr(java.lang.Object)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">attr</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>name</code></td>
-							<td><span><p>The name of the attribute to be added. If <code>null</code> or empty, no
+			<section class="r" id="attr(java.lang.Object)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">attr</code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code></td>
+						<td><span><p>The name of the attribute to be added. If <code>null</code> or empty, no
 attribute will be added.</p></span></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code></td>
-							<td><span><p>A <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that can be used to set the specified attribute on an HTML node.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Creates a <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that sets an attribute on an HTML element.</p><p>This method allows you to define an attribute for an HTML element by providing its name.
- The attribute will be added to the target HTML node when the returned <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code></td>
+						<td><span><p>A <code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that can be used to set the specified attribute on an HTML node.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Creates a <code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that sets an attribute on an HTML element.</p><p>This method allows you to define an attribute for an HTML element by providing its name.
+ The attribute will be added to the target HTML node when the returned <code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code>
  is invoked.</p><p>If the provided <code>name</code> is <code>null</code> or an empty string, the attribute will
  not be added.</p></span></section>
-				<section class="R" id="attr(java.lang.Object,java.lang.Object)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">attr</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>name</code></td>
-							<td><span><p>The name of the attribute to be added. If <code>null</code> or empty, no
+			<section class="r" id="attr(java.lang.Object,java.lang.Object)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">attr</code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>, <code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code></td>
+						<td><span><p>The name of the attribute to be added. If <code>null</code> or empty, no
 attribute will be added.</p></span></td>
-						</tr>
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>value</code></td>
-							<td><span><p>The value to be assigned to the attribute. If <code>null</code>, the attribute
+					</tr>
+					<tr class="V">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code></td>
+						<td><span><p>The value to be assigned to the attribute. If <code>null</code>, the attribute
 will still be added, but its value will be represented as <code>&#38;quot;null&#38;quot;</code>.</p></span></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td><span><p>A <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that can be used to set the specified attribute and value
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td><span><p>A <code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that can be used to set the specified attribute and value
 on an HTML node.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Creates a <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that sets an attribute with a specified value on an HTML element.</p><p>This method allows you to define an attribute and its value for an HTML element. The
- attribute will be added to the target HTML node when the returned <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code>
+					</tr>
+				</table><span class="B"><p>Creates a <code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code> that sets an attribute with a specified value on an HTML element.</p><p>This method allows you to define an attribute and its value for an HTML element. The
+ attribute will be added to the target HTML node when the returned <code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code>
  is invoked.</p><p>If the provided <code>name</code> is <code>null</code> or an empty string, the attribute will
  not be added.</p></span></section>
-				<section class="R" id="charset(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">charset</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">encoding</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>encoding</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for charset attribute.</p></span></section>
-				<section class="R" id="name(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">name</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for name attribute.</p></span></section>
-				<section class="R" id="content(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">content</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for content attribute.</p></span></section>
-				<section class="R" id="rel(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">rel</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for rel attribute.</p></span></section>
-				<section class="R" id="href(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">href</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for href attribute.</p></span></section>
-				<section class="R" id="src(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">src</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for src attribute.</p></span></section>
-				<section class="R" id="id(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">id</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for id attribute.</p></span></section>
-				<section class="R" id="clazz(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">clazz</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for class attribute.</p></span></section>
-				<section class="R" id="title(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">title</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Shorthand for title attribute.</p></span></section>
-				<section class="R" id="xml(kiss.XML)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">xml</code><code class="N">(<code>kiss.XML</code><code class="parameterName">child</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code>kiss.XML</code><code>child</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Accept child node.</p></span></section>
-				<section class="R" id="xml(kiss.Variable)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">xml</code><code class="N">(<code>kiss.Variable<code class="parameters"><code>kiss.XML</code></code></code><code class="parameterName">child</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code>kiss.Variable<code class="parameters"><code>kiss.XML</code></code></code><code>child</code></td>
-							<td></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Build child node.</p></span></section>
-				<section class="R" id="code(java.lang.Object)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">code</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>text</code></td>
-							<td><span><p>A text.</p></span></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Build code node.</p></span></section>
-				<section class="R" id="text(java.lang.Object)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">text</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="K"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>text</code></td>
-							<td><span><p>A text.</p></span></td>
-						</tr>
-						<tr class="Y">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Build text node.</p></span></section>
-				<section class="R" id="stylesheet(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">stylesheet</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="K"><code>void</code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>uri</code></td>
-							<td><span><p>URI to css.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Shorthand method to write stylesheet link tag.</p></span></section>
-				<section class="R" id="stylesheetAsync(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">stylesheetAsync</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="K"><code>void</code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>uri</code></td>
-							<td><span><p>URI to css.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Shorthand method to write stylesheet link tag.</p></span></section>
-				<section class="R" id="script(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">script</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="K"><code>void</code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>uri</code></td>
-							<td><span><p>URI to script.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
-				<section class="R" id="scriptAsync(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">scriptAsync</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="K"><code>void</code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>uri</code></td>
-							<td><span><p>URI to script.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
-				<section class="R" id="module(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">module</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="K"><code>void</code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>uri</code></td>
-							<td><span><p>URI to script.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
-				<section class="R" id="moduleAsync(java.lang.String)">
-					<h2 class="M"><i class="FINAL"><i class="PROTECTED"></i></i><code class="e">moduleAsync</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="K"><code>void</code></i></h2>
-					<table class="J">
-						<tr class="L">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>uri</code></td>
-							<td><span><p>URI to script.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
-			</article>
-			<aside class="h" id="SubNavi">
-				<div class="b">
-					<h5 class="g">Constructors</h5>
-					<ul>
-						<li><i class="PUBLIC"></i><code><a href="api/lycoris.HTML.html#HTML()">HTML</a></code><code class="N">()</code></li>
-					</ul>
-					<h5 class="g">Methods</h5>
-					<ul>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/lycoris.HTML.html#declare()">declare</a></code><code class="N">()</code><i class="f"><code>void</code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#$(lycoris.HTML)">$</a></code><code class="N">(<code><a href="api/lycoris.HTML.html">HTML</a></code><code class="parameterName">html</code>)</code><i class="f"><code>void</code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#attr(java.lang.Object)">attr</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#attr(java.lang.Object,java.lang.Object)">attr</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#charset(java.lang.String)">charset</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">encoding</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#name(java.lang.String)">name</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#content(java.lang.String)">content</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#rel(java.lang.String)">rel</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#href(java.lang.String)">href</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#src(java.lang.String)">src</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#id(java.lang.String)">id</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#clazz(java.lang.String)">clazz</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#title(java.lang.String)">title</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#xml(kiss.XML)">xml</a></code><code class="N">(<code>kiss.XML</code><code class="parameterName">child</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#xml(kiss.Variable)">xml</a></code><code class="N">(<code>kiss.Variable<code class="parameters"><code>kiss.XML</code></code></code><code class="parameterName">child</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#code(java.lang.Object)">code</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#text(java.lang.Object)">text</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#stylesheet(java.lang.String)">stylesheet</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="f"><code>void</code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#stylesheetAsync(java.lang.String)">stylesheetAsync</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="f"><code>void</code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#script(java.lang.String)">script</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="f"><code>void</code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#scriptAsync(java.lang.String)">scriptAsync</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="f"><code>void</code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#module(java.lang.String)">module</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="f"><code>void</code></i></li>
-						<li><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#moduleAsync(java.lang.String)">moduleAsync</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="f"><code>void</code></i></li>
-					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+			<section class="r" id="charset(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">charset</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">encoding</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">encoding</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for charset attribute.</p></span></section>
+			<section class="r" id="name(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">name</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for name attribute.</p></span></section>
+			<section class="r" id="content(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">content</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for content attribute.</p></span></section>
+			<section class="r" id="rel(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">rel</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for rel attribute.</p></span></section>
+			<section class="r" id="href(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">href</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for href attribute.</p></span></section>
+			<section class="r" id="src(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">src</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for src attribute.</p></span></section>
+			<section class="r" id="id(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">id</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for id attribute.</p></span></section>
+			<section class="r" id="clazz(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">clazz</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for class attribute.</p></span></section>
+			<section class="r" id="title(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">title</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Shorthand for title attribute.</p></span></section>
+			<section class="r" id="xml(kiss.XML)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">xml</code><code class="O">(<code>kiss.XML</code><code class="parameterName">child</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code>kiss.XML</code><code class="parameterName">child</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Accept child node.</p></span></section>
+			<section class="r" id="xml(kiss.Variable)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">xml</code><code class="O">(<code>kiss.Variable<code class="parameters"><code>kiss.XML</code></code></code><code class="parameterName">child</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code>kiss.Variable<code class="parameters"><code>kiss.XML</code></code></code><code class="parameterName">child</code></td>
+						<td></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Build child node.</p></span></section>
+			<section class="r" id="code(java.lang.Object)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">code</code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code></td>
+						<td><span><p>A text.</p></span></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Build code node.</p></span></section>
+			<section class="r" id="text(java.lang.Object)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">text</code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="Q"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code></td>
+						<td><span><p>A text.</p></span></td>
+					</tr>
+					<tr class="M">
+						<td><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Build text node.</p></span></section>
+			<section class="r" id="stylesheet(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">stylesheet</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code></td>
+						<td><span><p>URI to css.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Shorthand method to write stylesheet link tag.</p></span></section>
+			<section class="r" id="stylesheetAsync(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">stylesheetAsync</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code></td>
+						<td><span><p>URI to css.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Shorthand method to write stylesheet link tag.</p></span></section>
+			<section class="r" id="script(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">script</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code></td>
+						<td><span><p>URI to script.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
+			<section class="r" id="scriptAsync(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">scriptAsync</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code></td>
+						<td><span><p>URI to script.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
+			<section class="r" id="module(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">module</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code></td>
+						<td><span><p>URI to script.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
+			<section class="r" id="moduleAsync(java.lang.String)">
+				<h2 class="S"><i class="FINAL"><i class="PROTECTED"></i></i><code class="a">moduleAsync</code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="i">
+					<tr class="V">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code></td>
+						<td><span><p>URI to script.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Shorthand method to write script tag.</p></span></section>
+		</article>
+		<aside class="K">
+			<div class="I">
+				<h5 class="j">Constructors</h5>
+				<ul>
+					<li class="m"><i class="PUBLIC"></i><code><a href="api/lycoris.HTML.html#HTML()">HTML</a></code><code class="O">()</code></li>
+				</ul>
+				<h5 class="j">Methods</h5>
+				<ul>
+					<li class="m"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/lycoris.HTML.html#declare()">declare</a></code><code class="O">()</code><i class="e"><code>void</code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#$(lycoris.HTML)">$</a></code><code class="O">(<code><a aria-label="lycoris.HTML" href="api/lycoris.HTML.html">HTML</a></code><code class="parameterName">html</code>)</code><i class="e"><code>void</code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#attr(java.lang.Object)">attr</a></code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#attr(java.lang.Object,java.lang.Object)">attr</a></code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">name</code>, <code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#charset(java.lang.String)">charset</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">encoding</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#name(java.lang.String)">name</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#content(java.lang.String)">content</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#rel(java.lang.String)">rel</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#href(java.lang.String)">href</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#src(java.lang.String)">src</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#id(java.lang.String)">id</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#clazz(java.lang.String)">clazz</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#title(java.lang.String)">title</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#xml(kiss.XML)">xml</a></code><code class="O">(<code>kiss.XML</code><code class="parameterName">child</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#xml(kiss.Variable)">xml</a></code><code class="O">(<code>kiss.Variable<code class="parameters"><code>kiss.XML</code></code></code><code class="parameterName">child</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#code(java.lang.Object)">code</a></code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#text(java.lang.Object)">text</a></code><code class="O">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">text</code>)</code><i class="e"><code><a aria-label="java.util.function.Consumer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html">Consumer</a><code class="parameters"><code>kiss.XML</code></code></code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#stylesheet(java.lang.String)">stylesheet</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="e"><code>void</code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#stylesheetAsync(java.lang.String)">stylesheetAsync</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="e"><code>void</code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#script(java.lang.String)">script</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="e"><code>void</code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#scriptAsync(java.lang.String)">scriptAsync</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="e"><code>void</code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#module(java.lang.String)">module</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="e"><code>void</code></i></li>
+					<li class="m"><i class="FINAL"><i class="PROTECTED"></i></i><code><a href="api/lycoris.HTML.html#moduleAsync(java.lang.String)">moduleAsync</a></code><code class="O">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">uri</code>)</code><i class="e"><code>void</code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="c"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>
