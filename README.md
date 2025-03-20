@@ -107,13 +107,13 @@ If you think something might be a bug, but you're not sure, ask on StackOverflow
 
 ## Dependency
 Lycoris depends on the following products on runtime.
-* [sinobu-4.5.2](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.5.2)
-* [stylist-1.12.0](https://mvnrepository.com/artifact/com.github.teletha/stylist/1.12.0)
+* [sinobu-4.6.0](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.6.0)
+* [stylist-1.14.0](https://mvnrepository.com/artifact/com.github.teletha/stylist/1.14.0)
 <p align="right"><a href="#top">back to top</a></p>
 
 
 ## License
-Copyright (C) 2024 The LYCORIS Development Team
+Copyright (C) 2025 The LYCORIS Development Team
 
 MIT License
 
