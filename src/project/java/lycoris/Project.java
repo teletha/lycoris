@@ -24,13 +24,13 @@ import javax.lang.model.SourceVersion;
 
 public class Project extends bee.api.Project {
     {
-        product("com.github.teletha", "lycoris", ref("version.txt"));
+        product("io.github.teletha", "lycoris", ref("version.txt"));
         license(MIT);
         require(SourceVersion.latest(), SourceVersion.RELEASE_21);
 
-        require("com.github.teletha", "sinobu");
-        require("com.github.teletha", "stylist");
-        require("com.github.teletha", "antibug").atTest();
+        require("io.github.teletha", "sinobu");
+        require("io.github.teletha", "stylist");
+        require("io.github.teletha", "antibug").atTest();
 
         describe("""
                 Lycoris is designed to simplify the creation of hierarchical tree structures through a domain-specific language (DSL).
