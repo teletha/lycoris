@@ -6,22 +6,16 @@ const root = {
 	],
 	"types": [
 		{
-			"modifiers": {
-				"#": "java.util.Collections$UnmodifiableSet",},
-			"name": "HTML",
-			"packageName": "lycoris",
-			"type": "AbstractClass"
-		},
-		{
-			"modifiers": {
-				"#": "java.util.Collections$UnmodifiableSet",},
 			"name": "Tree",
 			"packageName": "lycoris",
 			"type": "AbstractClass"
 		},
 		{
-			"modifiers": {
-				"#": "java.util.Collections$UnmodifiableSet",},
+			"name": "HTML",
+			"packageName": "lycoris",
+			"type": "AbstractClass"
+		},
+		{
 			"name": "TreeNode",
 			"packageName": "lycoris",
 			"type": "AbstractClass"
